@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import realPic from '../public/images/real-me.jpg';
+import realPic from '../public/images/grad-pic.jpg';
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -46,17 +46,18 @@ export default function Home({ posts }) {
       <header className={styles.header}>
         <div className={styles.introBox}>
         <h1 className={styles.title}>Viviana Davila</h1>
-        <p className={styles.intro}>Hello! My name is Viviana, and I’m a Front-End Web Developer. 
-          As a self-taught developer, I rely on technical blogs like this to help me work towards solutions 
-          and become a stronger programmer. As a junior dev, it’s my hope that I can explain concepts more simply 
-          and help out my fellow junior devs out there. Good luck!</p>
+        <div className={styles.codeText}>Front-End Engineer</div>
+        <p className={styles.intro}>Hello! I’m a Front-End Engineer based in Los Angeles, CA 
+        with an emphasis on utilizing ReactJS to build both simple mobile-responsive websites & 
+        dynamic web applications.</p>
         </div>
         <div className={styles.picBox}>
-        <Image src={realPic} className={styles.topPic} width={300} height={300} alt="Animated picture of me" />
+        <Image src={realPic} className={styles.topPic} width={300} height={300} alt="Picture of me" />
+        <div className={styles.picOutline}></div>
         </div>
       </header>
       <section>
-        <h2 className={styles.postTitle}>Recent Posts</h2>
+        <h2 className={styles.headTitle}>Recent Posts</h2>
         <div className="posts">
           {
             posts.map((post, index) => (
@@ -69,7 +70,7 @@ export default function Home({ posts }) {
 
       <section className={styles.subscribe}>
         <div className={styles.subBox}>
-        <h2 className={styles.subTitle}>Subscribe</h2>
+        <h2 className={styles.headTitle}>Subscribe</h2>
         <p className={styles.subInfo}>Want to learn more about Web Development? Sign up with your email to be notified everytime
            I add a new post!</p>
         </div>

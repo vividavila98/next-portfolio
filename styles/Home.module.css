@@ -5,8 +5,15 @@
 }
 
 .title {
-    background: linear-gradient(to top, #F6E7F9 50%, transparent 50%);
+    background: linear-gradient(to top, #133E7B 50%, transparent 50%);
     display: inline;
+}
+
+.codeText {
+    color: #40CFE4;
+    font-family: "Roboto Mono";
+    font-size: 1.2em;
+    margin-top: 15px;
 }
 
 .intro {
@@ -20,16 +27,29 @@
 }
 
 .picBox {
-    width: 50%;
     display: inline-block;
     width: 40%;
     margin-left: 50px;
-    aspect-ratio: 1;
+    position: relative;
 }
 
 .topPic {
-    border-radius: 60px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
 }
+
+.picOutline {
+    border: 3px solid #40CFE4;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 0;
+    top: 18px;
+    left: 18px;
+}
+
 
 .postTitle {
     background: linear-gradient(to top, #D2F7F2 50%, transparent 50%);
@@ -47,8 +67,8 @@
     display: inline-block;
 }
 
-.subTitle {
-    background: linear-gradient(to top, #FFEEDA 50%, transparent 50%);
+.headTitle {
+    background: linear-gradient(to top, #133E7B 50%, transparent 50%);
     display: inline;
 }
 
