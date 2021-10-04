@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
     <>
     <Head>
         <title>Viviana Davila | Blog </title>
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/styles/shades-of-purple.min.css"></link>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/night-owl.min.css"></link>
     </Head>
     <Header />
     <Component {...pageProps} />

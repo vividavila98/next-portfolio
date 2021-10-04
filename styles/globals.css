@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 * {
@@ -27,7 +27,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #D1F5F3;
 }
 
 .container {
@@ -51,12 +51,12 @@ nav ul li {
 nav .logo, nav .logo:hover {
   font-weight: 700;
   font-size: 1.5em;
-  background: linear-gradient(to top, #EAFBFF 50%, transparent 50%);
+  background: linear-gradient(to top, #133E7B 50%, transparent 50%);
   cursor: pointer;
 }
 
 nav ul li.active a, nav ul li a:hover {
-  background: linear-gradient(to top, #FFEEDA 50%, transparent 50%);
+  background: linear-gradient(to top, #133E7B 50%, transparent 50%);
 }
 
 nav ul li:first-child{
@@ -69,8 +69,7 @@ nav.mobile {
 
 
 footer {
-  background: #5C7489;
-  color: #fff;
+  color: #40CFE4;
   padding: 50px 0;
   margin-top: 80px;
 }
@@ -81,20 +80,22 @@ footer ul {
   padding: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 footer ul li {
   margin-right: 20px;
 }
 
-footer ul li:first-child {
+/* footer ul li:first-child {
   margin-right: auto;
   font-weight: 700;
   font-size: 1.5em;
-}
+} */
 
 footer ul li a {
-  color: #fff;
+  color: #40CFE4;
+  text-decoration: underline;
 }
 
 footer ul li a:hover {
@@ -106,21 +107,36 @@ footer ul li a:hover {
 }
 
 .date {
-  color: #857B7B;
+  color: #40CFE4;
   margin-bottom: 5px;
+  font-family: "Roboto Mono";
 }
 
 .card-info {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+.card .outline {
+  height: 32px;
+  width: 106px;
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  z-index: 0;
+  border-radius: 5px;
+  border: 1px solid #D1F5F3;
 }
 
 .card-btn {
-  color: #7950F2;
-  background: #E0D7FA;
+  color: #D1F5F3;
+  background: #007991;
   font-weight: 700;
-  border-radius: 19px;
-  padding: 7px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  z-index: 1;
+  padding: 4px 10px;
 }
 
 .card-btn:hover {
@@ -131,7 +147,7 @@ footer ul li a:hover {
 .card hr {
   border: none;
   border-top: 1px solid #E5E5E5;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 article {
@@ -141,12 +157,26 @@ article {
 article h1 {
   margin-bottom: 25px;
   font-size: 2em;
-  background: linear-gradient(to top, #F6E7F9 50%, transparent 50%);
-  display: inline;
+  background: linear-gradient(to top, #133E7B 50%, transparent 50%);
+  display: inline-block;
 }
 
 article h2 {
   margin: 35px 0 0 0;
+}
+
+article hr {
+  margin: 55px 0;
+  border: none;
+  border-top: 1px solid;
+}
+
+article li {
+  list-style-type: circle;
+}
+
+pre {
+  margin: 25px 0;
 }
 
  code.hljs {

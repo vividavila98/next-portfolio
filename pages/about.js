@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import animPic from '../public/images/about-cover.png';
 import styles from "../styles/About.module.css";
 
 export default function About() {

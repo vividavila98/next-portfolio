@@ -6,7 +6,10 @@ export default function Post({post}) {
             <div className="date">{post.frontmatter.date}</div>
             <div className="card-info">
                 <h3 className="card-title">{post.frontmatter.title}</h3>
-                <Link href={`/blog/${post.slug}`}><a className="card-btn">Read More</a></Link>
+                <Link href={`/blog/${post.slug}`}>
+                    <a className="card-btn">Read More</a>
+                </Link>
+                <span className="outline"></span>
             </div>
             <hr />
         </div>

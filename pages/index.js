@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import realPic from '../public/images/grad-pic.jpg';
+import arrow from '../public/images/sub-arrow.svg';
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -52,15 +53,31 @@ export default function Home({ posts }) {
         dynamic web applications.</p>
         </div>
         <div className={styles.picBox}>
-        <Image src={realPic} className={styles.topPic} width={300} height={300} alt="Picture of me" />
+        <Image src={realPic} className={styles.topPic} width={500} height={500} alt="Picture of me" />
         <div className={styles.picOutline}></div>
         </div>
       </header>
       <section>
         <h2 className={styles.headTitle}>Recent Posts</h2>
+        <div className={styles.subText}>
+          Sign up to be notified <br/> everytime I add a new post!
+          <form className={styles.form}>
+          <input 
+            name="email" 
+            type="email" 
+            placeholder="email" 
+            className={styles.input}
+            value={email}
+            onChange={handleChange}
+            />
+          <button className={styles.btn} onClick={subscribe}>
+          <Image src={arrow} className={styles.arrow} width={20} height={20} alt="arrow" />
+          </button>
+        </form>
+        </div>
         <div className="posts">
           {
-            posts.map((post, index) => (
+            posts.slice(0, 2).map((post, index) => (
               <Post post={post} key={index}/>
               
             ))
@@ -68,27 +85,15 @@ export default function Home({ posts }) {
         </div>
       </section>
 
+      <section>
+      <h2 className={styles.headTitle}>Featured Projects</h2>
+      </section>
+
       <section className={styles.subscribe}>
         <div className={styles.subBox}>
         <h2 className={styles.headTitle}>Subscribe</h2>
         <p className={styles.subInfo}>Want to learn more about Web Development? Sign up with your email to be notified everytime
            I add a new post!</p>
-        </div>
-        <div className={styles.subBox}>
-        <form className={styles.form}>
-          <label htmlFor="name" className={styles.label}>Email Address</label>
-          <input 
-            name="email" 
-            type="email" 
-            placeholder="dev@gmail.com" 
-            className={styles.input}
-            value={email}
-            onChange={handleChange}
-            />
-          <button className={styles.btn} onClick={subscribe}>Sign Up</button>
-          <span className={styles.outline}></span>
-          <p className={styles.status}>{status}</p>
-        </form>
         </div>
       </section>
     </div>

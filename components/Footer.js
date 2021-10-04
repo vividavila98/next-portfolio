@@ -5,7 +5,6 @@ export default function Footer() {
         <footer>
             <div className="container">
             <ul>
-                <li className="logo">From One Junior <br/> Dev to Another</li>
                 <li><Link href="/">home</Link></li>
                 <li><Link href="/posts">posts</Link></li>
                 <li><Link href="/about">about</Link></li>

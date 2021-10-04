@@ -14,11 +14,12 @@
     font-family: "Roboto Mono";
     font-size: 1.2em;
     margin-top: 15px;
+    font-weight: 700;
 }
 
 .intro {
     margin-top: 35px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .introBox {
@@ -62,9 +63,14 @@
     align-items: center;
 }
 
-.subBox {
-    width: 50%;
-    display: inline-block;
+.subText {
+    color: #40CFE4;
+    font-family: "Roboto Mono";
+    font-size: 1.2em;
+    margin: 35px 0;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
 }
 
 .headTitle {
@@ -77,35 +83,29 @@
 }
 
 .form {
-    background: #EAFBFF;
-    border: 1px solid #08B3D7;
-    padding: 50px;
     display: flex;
-    flex-direction: column;
-    margin-left: 50px;
 }
-
-.label {
-    display: block;
-    font-weight: 600;
-}
-
 .input {
     display: block;
-    margin: 25px 0;
     padding: 10px 15px;
-    border: 1px solid #B2A7A7;
+    border: none;
     border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    height: 40px;
 }
 
 .btn {
-    background: #6795C5;
+    background: #007991;
+    height: 40px;
     font-weight: 600;
     color: #fff;
     border: none;
-    padding: 5px 10px;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     font-size: 1em;
-    width: 160px;
+    width: 50px;
     z-index: 1;
     display: block;
     margin: 0 auto;
@@ -114,13 +114,13 @@
     transition: left 5s ease-out;
 }
 
-.btn:hover {
+/* .btn:hover {
     top: 9px;
     left: -9px;
     cursor: pointer;
     transition: top 5s ease-out;
     transition: left 5s ease-out;
-}
+} */
 
 .outline {
     height: 28px;
