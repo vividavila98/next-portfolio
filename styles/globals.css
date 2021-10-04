@@ -109,6 +109,7 @@ footer ul li a:hover {
 .date {
   color: #40CFE4;
   margin-bottom: 5px;
+  font-size: .9em;
   font-family: "Roboto Mono";
 }
 
@@ -231,8 +232,13 @@ pre {
     flex-direction: column;
   }
   .card-btn {
-    width: 117px;
+    width: 106px;
     margin-top: 15px;
+  }
+
+  .card .outline {
+    right: 0;
+    left: 5px;
   }
 
   footer ul {

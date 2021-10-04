@@ -14,7 +14,7 @@ export default function Blog({ posts }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <article>
-                <h1>Posts</h1>
+                <h1>All Posts</h1>
                 <section>
                     <div className="posts">
                     {
