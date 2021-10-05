@@ -7,6 +7,7 @@ import realPic from '../public/images/grad-pic.jpg';
 import arrow from '../public/images/sub-arrow.svg';
 import exLink from '../public/images/ex-link.svg';
 import gitLink from '../public/images/gitlink2.svg';
+import skills from '../public/images/skills2.png';
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -52,7 +53,7 @@ export default function Home({ posts }) {
         <h1 className={styles.title}>Viviana Davila</h1>
         <div className={styles.codeText}>Front-End Engineer</div>
         <p className={styles.intro}>Hello! I’m a Front-End Engineer based in Los Angeles, CA 
-        with an emphasis on utilizing ReactJS to build both simple mobile-responsive websites & 
+        with an emphasis on utilizing <span className="code">ReactJS</span> to build both simple mobile-responsive websites & 
         dynamic web applications.</p>
         </div>
         <div className={styles.picBox}>
@@ -97,9 +98,7 @@ export default function Home({ posts }) {
             <p className={styles.projTech}>MongoDB Express React TypeScript Redux</p>
             <h3>Shortly</h3>
             <p className={styles.projInfo}>
-              A tool to shorten your link, as apart of a mock website 
-              designed by FrontEnd Mentor.</p>
-              <br/>
+              A tool to transform a lengthy URL into a shorter, easy to read link that redirects to the original URL.</p>
               <div className={styles.projLink}>
               <Link href="https://www.lill.link/">
                 <a target="_blank" rel="noopener noreferrer">
@@ -136,18 +135,17 @@ export default function Home({ posts }) {
         </div>
         <div className={styles.projList}>
           <div className={styles.projBox}>
-            <p className={styles.projTech}>MongoDB Express React TypeScript Redux</p>
-            <h3>Shortly</h3>
+            <p className={styles.projTech}>TypeScript React Countries API SCSS</p>
+            <h3>Where in the World?</h3>
             <p className={styles.projInfo}>
-              A tool to shorten your link, as apart of a mock website 
-              designed by FrontEnd Mentor.</p>
+              A resource to learn about more a country, including its population, primary languages, and more.</p>
               <div className={styles.projLink}>
-              <Link href="https://www.lill.link/">
+              <Link href="https://www.countries.guide/">
                 <a target="_blank" rel="noopener noreferrer">
                   <Image src={exLink} className={styles.arrow} width={25} height={25} alt="arrow" />
                   </a>
               </Link>
-              <Link href="https://github.com/vividavila98/shortly">
+              <Link href="https://github.com/vividavila98/countries">
                 <a target="_blank" rel="noopener noreferrer">
                   <Image src={gitLink} className={styles.arrow} width={25} height={25} alt="arrow" />
                   </a>
@@ -156,18 +154,17 @@ export default function Home({ posts }) {
           </div>
           <div className={styles.projOutline}></div>
           <div className={styles.projBox}>
-            <p className={styles.projTech}>MERN TypeScript Redux</p>
-            <h3>Shortly</h3>
+            <p className={styles.projTech}>TypeScript React IP Geolocation API</p>
+            <h3>IP Tracker</h3>
             <p className={styles.projInfo}>
-              A tool to shorten your link, as apart of a mock website 
-              designed by FrontEnd Mentor.</p>
+              A tool to search for any IP address or domain to discover its location, timezone, and more.</p>
               <div className={styles.projLink}>
-                <Link href="https://www.lill.link/">
+                <Link href="https://www.ip-tracker.me/">
                   <a target="_blank" rel="noopener noreferrer">
                     <Image src={exLink} className={styles.arrow} width={25} height={25} alt="arrow" />
                     </a>
                 </Link>
-                <Link href="https://github.com/vividavila98/shortly">
+                <Link href="https://github.com/vividavila98/ip-tracker">
                   <a target="_blank" rel="noopener noreferrer">
                     <Image src={gitLink} className={styles.arrow} width={25} height={25} alt="arrow" />
                     </a>
@@ -176,10 +173,20 @@ export default function Home({ posts }) {
           </div>
           <div className={styles.projOutline2}></div>
         </div>
-
       </section>
 
-      
+      <section>
+        <h2 className={styles.headTitle}>Learn More About Me</h2>
+        <div className={styles.aboutBox}>
+          <p>Hello again! Thanks for taking the take to check out my work. As a junior dev, it’s my hope 
+          that I can explain concepts more simply and help out my fellow junior devs out there.  I still 
+          have so much left to learn, but this is my way of contributing to a community that has given me so much 
+          already! <br/>If you’re intersted in learning more about me and my work, feel free to email me!</p>
+          <div className={styles.skillsBox}>
+            <Image src={skills} alt="my skills" quality={100}/>
+          </div>
+          </div>
+      </section>      
     </div>
   )
 }

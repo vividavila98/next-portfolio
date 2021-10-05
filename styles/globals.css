@@ -31,7 +31,7 @@ a {
 }
 
 .container {
-  max-width: 768px;
+  max-width: 900px;
   margin: auto;
   overflow: auto;
   padding: 0 10px;

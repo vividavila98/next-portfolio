@@ -5,11 +5,10 @@ export default function Footer() {
         <footer>
             <div className="container">
             <ul>
-                <li><Link href="/">home</Link></li>
-                <li><Link href="/posts">posts</Link></li>
-                <li><Link href="/about">about</Link></li>
-                <li><a href="https://www.vivianadavila.dev/" target="_blank" rel="noopener noreferrer">portfolio</a></li>
-                <li><Link href="mailto:vividavila98@gmail.com">contact</Link></li>
+                <li><Link href="mailto:vividavila98@gmail.com">Email</Link></li>
+                <li><Link href="/">Resume</Link></li>
+                <li><Link href="https://github.com/vividavila98">Github</Link></li>
+                <li><Link href="https://www.linkedin.com/in/viviana-davila/">LinkedIn</Link></li>
             </ul>
             </div>
         </footer>
