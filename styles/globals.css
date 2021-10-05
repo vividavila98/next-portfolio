@@ -14,6 +14,11 @@ body {
   color: #D1F5F3;
 }
 
+.headTitle {
+  background: linear-gradient(to top, #133E7B 50%, transparent 50%);
+  display: inline;
+}
+
 .code {
   color: #40CFE4;
   font-family: "Roboto Mono";
@@ -141,8 +146,7 @@ footer ul li a:hover {
 }
 
 .card-btn:hover {
-  background: #cbb9fe;
-  color: #6e46e2;
+  background: #035d6f;
 }
 
 .card hr {
