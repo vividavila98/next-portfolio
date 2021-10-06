@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.54",
+    "animate.css": "^4.1.1",
     "axios": "^0.21.1",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.1.0",

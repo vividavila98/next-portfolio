@@ -1,6 +1,5 @@
 import React from 'react';
-import Head from "next/head";
-import styles from "../styles/Header.module.css";
+import Head from "next/head"; 
 import Image from "next/image";
 import realPic from '../public/images/grad-pic.jpg';
 
@@ -12,17 +11,18 @@ export default function Header() {
           <meta name="description" content="Web Dev Blog" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <header className={styles.header}>
-          <div className={styles.introBox}>
-            <h1 className={styles.title}>Viviana Davila</h1>
-            <div className={styles.codeText}>Front-End Developer</div>
-            <p className={styles.intro}>Hello! I’m a Front-End Developer based in Los Angeles, CA 
+        <header className="header">
+          <div className="introBox animate__animated animate__fadeInDown">
+            <h1 className="title">Viviana Davila</h1>
+            <div className="codeText">Front-End Developer</div>
+            <p className="intro">Hello! I’m a Front-End Developer based in Los Angeles, CA 
             with an emphasis on utilizing <span className="code">ReactJS</span> to build both simple mobile-responsive websites & 
             dynamic web applications.</p>
-            </div>
-            <div className={styles.picBox}>
-            <Image src={realPic} className={styles.topPic} width={500} height={500} alt="Picture of me" />
-            <div className={styles.picOutline}></div>
+          </div>
+          
+          <div className="picBox animate__animated animate__fadeInDown">
+            <Image src={realPic} className="topPic" width={500} height={500} alt="Picture of me" />
+            <div className="picOutline"></div>
           </div>
         </header>
         </>
