@@ -1,14 +1,13 @@
 import React from 'react';
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import skills from '../public/images/skills.svg';
+import skills from '../public/images/myskills2.png';
 
 export default function About() {
     return (
-    <section>
+    <section id="about" className="animate__animated animate__fadeIn animate__delay-1s">
       <h2 className="headTitle">Learn More About Me</h2>
-      <div className={styles.aboutBox}>
-        <div className={styles.skillsBox}>
+      <div className="aboutBox">
+        <div className="skillsBox">
             <Image src={skills} alt="my skills" quality={100}/>
         </div>
         <p>

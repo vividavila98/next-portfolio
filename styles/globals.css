@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -188,7 +189,7 @@ body {
 
 p {
   margin: 15px 0;
-  line-height: 1.8;
+  line-height: 1.8em;
   color: #D1F5F3;
 }
 
@@ -379,6 +380,7 @@ footer ul li a:hover {
 
 article {
   min-height: 50vh;
+  font-weight: 200;
 }
 
 article h1 {
@@ -400,6 +402,7 @@ article hr {
 
 article li {
   list-style-type: circle;
+  line-height: 1.8em;
 }
 
 pre {
@@ -409,6 +412,46 @@ pre {
  code.hljs {
   padding: 25px;
   border-radius: 10px;
+}
+
+.aboutBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.aboutBox p {
+  width: 45%;
+  display: inline-block;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+.skillsBox {
+  display: inline-block;
+  width: 47%;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .picOutline {
+    width: 277px;
+    height: 277px;
+  }
+
+  .picBox {
+    margin-left: 57px;
+  }
+
+  .projOutline, .projOutline2 {
+    width: 322px;
+    height: 253px;
+  }
 }
 
 
@@ -454,6 +497,41 @@ pre {
     margin-bottom: 10px;
   }
 
+  .header {
+    flex-direction: column;
+    padding-top: 25px;
+  }
+
+.introBox {
+  width: 100%;
+}
+
+.intro {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.picBox {
+  display: none;
+}
+
+.subText {
+  flex-direction: column;
+}
+
+.btn {
+  margin: 0;
+}
+
+.subBox {
+    width: 100%;
+  }
+
+.form {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
   .card-info {
     flex-direction: column;
   }
@@ -467,6 +545,46 @@ pre {
     left: 5px;
   }
 
+  .projList {
+    flex-direction: column;
+  }
+
+  .projBox {
+    width: 100%;
+    margin-bottom: 17.5px;
+  }
+
+  .projTech {
+    font-size: .75em;
+  }
+
+  .projOutline, .projOutline2 {
+    width: 325px;
+    height: 252px;
+  }
+
+  .projOutline {
+    bottom: 0;
+    top: 45px;
+  }
+
+  .aboutBox {
+    flex-direction: column;
+  }
+
+  .skillsBox {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .aboutBox p {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
   footer ul {
     flex-direction: column;
   }
@@ -474,10 +592,10 @@ pre {
   footer ul li {
     margin-bottom: 15px;
   }
+}
 
-  footer ul li:first-child {
+@media (max-width: 767px) {
+  .projOutline, .projOutline2 {
     display: none;
   }
-
-
 }

@@ -10,7 +10,7 @@ export default function PostList(props) {
   const { email, handleChange, subscribe } = useSubscribe();
 
     return (
-      <section className="animate__animated animate__fadeIn animate__delay-1s">
+      <section id="posts" className="animate__animated animate__fadeIn animate__delay-1s">
             <h2 className="headTitle">Recent Posts</h2>
             <div className="subText">
             Sign up to be notified <br/> everytime I add a new post!

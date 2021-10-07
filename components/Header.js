@@ -12,7 +12,7 @@ export default function Header() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <header className="header">
-          <div className="introBox animate__animated animate__fadeInDown">
+          <div className="introBox animate__animated animate__fadeIn">
             <h1 className="title">Viviana Davila</h1>
             <div className="codeText">Front-End Developer</div>
             <p className="intro">Hello! I’m a Front-End Developer based in Los Angeles, CA 
@@ -20,7 +20,7 @@ export default function Header() {
             dynamic web applications.</p>
           </div>
           
-          <div className="picBox animate__animated animate__fadeInDown">
+          <div className="picBox animate__animated animate__fadeIn">
             <Image src={realPic} className="topPic" width={500} height={500} alt="Picture of me" />
             <div className="picOutline"></div>
           </div>
