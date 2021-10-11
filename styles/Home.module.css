@@ -1,20 +1,4 @@
-.aboutBox {
-    display: flex;
-    align-items: center;
-    margin-top: 35px;
-}
 
-.aboutBox p {
-    width: 65%;
-    display: inline-block;
-    font-weight: 200;
-}
-
-.skillsBox {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-}
 
 @media (max-width: 767px) {
     .header {

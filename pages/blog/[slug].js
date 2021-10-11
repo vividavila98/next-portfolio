@@ -6,7 +6,7 @@ import marked from "marked";
 export default function PostPage({frontmatter: {title, date}, slug, content}) {
     return (
         <div className="container">
-            <article dangerouslySetInnerHTML={{__html: marked(content)}}>
+            <article className="animate__animated animate__fadeIn animate__delay-2s" dangerouslySetInnerHTML={{__html: marked(content)}}>
             </article>
         </div>
     )

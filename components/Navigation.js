@@ -14,7 +14,7 @@ export default function Navigation() {
 
     return (
         <>
-        <nav className="container desktop animate__animated animate__fadeIn animate__delay-1s">
+        <nav className="container desktop animate__animated animate__fadeIn animate__delay-2s">
          <ul>
             <li className="logo"><Link href="/">V</Link></li>
             <li className={router.pathname == "/" ? "active" : ""}><Link href="/">home</Link></li>

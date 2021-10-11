@@ -7,27 +7,28 @@ import useSubscribe from '../hooks/useSubscribe';
 
 export default function PostList(props) {
   const { posts } = props;
-  const { email, handleChange, subscribe } = useSubscribe();
+  const { email, handleChange, subscribe, response } = useSubscribe();
 
     return (
-      <section id="posts" className="animate__animated animate__fadeIn animate__delay-1s">
+      <section id="posts" className="animate__animated animate__fadeIn animate__delay-2s">
             <h2 className="headTitle">Recent Posts</h2>
-            <div className="subText">
-            Sign up to be notified <br/> everytime I add a new post!
-            <form className="form">
-            <input 
-                name="email" 
-                type="email" 
-                placeholder="email" 
-                className="input"
-                value={email}
-                onChange={handleChange}
-                />
-            <button className="btn" onClick={subscribe}>
-            <Image src={arrow} className="arrow" width={15} height={15} alt="arrow" />
-            </button>
-            </form>
+            <div className="formCont">
+              <div className="subText">Sign up to be notified <br/> everytime I add a new post!</div>
+              <form className="form">
+                <input 
+                  name="email" 
+                  type="email" 
+                  placeholder="email" 
+                  className="input"
+                  value={email}
+                  onChange={handleChange}
+                  />
+                <button className="btn" onClick={subscribe}>
+                  <Image src={arrow} className="arrow" width={15} height={15} alt="arrow" />
+                </button>
+              </form>
             </div>
+            <p className="formResp">{response}</p>
             <div className="posts">
             {
                 posts.slice(0, 2).map((post, index) => (

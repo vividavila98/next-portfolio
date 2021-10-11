@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import skills from '../public/images/myskills2.png';
+import skills from '../public/images/newskills.svg';
 
 export default function About() {
     return (

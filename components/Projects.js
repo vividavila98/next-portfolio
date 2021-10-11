@@ -11,9 +11,9 @@ export default function Projects() {
       <div className="projList">
           <div className="projBox">
             <p className="projTech">MongoDB Express React TypeScript Redux</p>
-            <h3>Shortly</h3>
+            <a className="projLink" href="https://www.lill.link/" target="_blank" rel="noopener noreferrer"><h3>Shortly</h3></a>
             <p className="projInfo">
-              A tool to transform a lengthy URL into a shorter, easy to read link that redirects to the original URL.</p>
+              A tool to transform a long URL into a shorter, easy to read link that redirects to the original URL.</p>
               <div className="projLink">
               <Link href="https://www.lill.link/">
                 <a target="_blank" rel="noopener noreferrer">
@@ -31,7 +31,7 @@ export default function Projects() {
           
           <div className="projBox">
             <p className="projTech">JavaScript React Yelp API</p>
-            <h3>Ravenous</h3>
+            <a className="projLink" href="https://www.ravenous.me/" target="_blank" rel="noopener noreferrer"><h3>Ravenous</h3></a>
             <p className="projInfo">
               An online directory to help you find the best local businesses based on their rating and reviews.</p>
               <div className="projLink">
@@ -52,7 +52,7 @@ export default function Projects() {
         <div className="projList">
           <div className="projBox">
             <p className="projTech">TypeScript React Countries API SCSS</p>
-            <h3>Where in the World?</h3>
+            <a className="projLink" href="https://www.countries.guide/" target="_blank" rel="noopener noreferrer"><h3>Where in the World?</h3></a>
             <p className="projInfo">
               A resource to learn about more a country, including its population, primary languages, and more.</p>
               <div className="projLink">
@@ -71,7 +71,7 @@ export default function Projects() {
           <div className="projOutline"></div>
           <div className="projBox">
             <p className="projTech">TypeScript React IP Geolocation API</p>
-            <h3>IP Tracker</h3>
+            <a className="projLink" href="https://www.ip-tracker.me/" target="_blank" rel="noopener noreferrer"><h3>IP Tracker</h3></a>
             <p className="projInfo">
               A tool to search for any IP address or domain to discover its location, timezone, and more.</p>
               <div className="projLink">

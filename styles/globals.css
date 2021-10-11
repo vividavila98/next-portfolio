@@ -82,15 +82,24 @@ body {
   display: inline;
 }
 
-
 .subText {
   color: #40CFE4;
   font-family: "Roboto Mono";
   font-size: 1.2em;
-  margin: 35px 0;
   font-weight: 700;
+}
+
+
+.formCont {
+  margin-top: 35px;
   display: flex;
   justify-content: space-between;
+}
+
+.formResp {
+  text-align: right;
+  margin: 0;
+  height: 29px;
 }
 
 .headTitle {
@@ -109,17 +118,6 @@ body {
 .postTitle {
   background: linear-gradient(to top, #D2F7F2 50%, transparent 50%);
   display: inline;
-}
-
-
-.subText {
-  color: #40CFE4;
-  font-family: "Roboto Mono";
-  font-size: 1.2em;
-  margin: 35px 0;
-  font-weight: 700;
-  display: flex;
-  justify-content: space-between;
 }
 
 .headTitle {
@@ -199,10 +197,10 @@ a {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 915px;
   margin: auto;
   overflow: auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 nav ul {
@@ -337,28 +335,43 @@ footer ul li a:hover {
   border-radius: 5px;
   z-index: 1;
   position: relative;
+  transition: transform 250ms;
+}
+
+.projBox:hover{
+  transform: translateY(-10px);
+}
+
+.projBox:hover + .projOutline{
+  transform: translate(-10px, -20px);
+}
+
+.projBox:hover + .projOutline2{
+  transform: translate(-10px, -20px);
 }
 
 .projOutline {
   border-radius: 5px;
   border: 3px solid #40CFE4;
-  width: 404px;
-  height: 229px;
+  width: 402px;
+  height: 228px;
   position: absolute;
   z-index: 0;
   bottom: 25px;
   left: 10px;
+  transition: transform 250ms;
 }
 
 .projOutline2 {
   border-radius: 5px;
   border: 3px solid #40CFE4;
-  width: 404px;
-  height: 229px;
+  width: 402px;
+  height: 228px;
   position: absolute;
   z-index: 0;
   bottom: 25px;
   right: -10px;
+  transition: transform 250ms;
 }
 
 .projTech {
@@ -366,6 +379,16 @@ footer ul li a:hover {
   font-family: "Roboto Mono";
   font-size: .8em;
   margin-top: 0;
+}
+
+.projLink {
+  margin: 0;
+  display: block;
+}
+
+.projLink:hover {
+  color: #F3E47D;
+  cursor: pointer;
 }
 
 .projInfo {
@@ -401,9 +424,11 @@ article hr {
 }
 
 article li {
-  list-style-type: circle;
+  list-style-type: disc;
+  display: list-item !important;
   line-height: 1.8em;
 }
+
 
 pre {
   margin: 25px 0;
@@ -448,10 +473,16 @@ pre {
     margin-left: 57px;
   }
 
+  .formResp {
+    text-align: left;
+    margin-top: 10px;
+  }
+
   .projOutline, .projOutline2 {
     width: 322px;
     height: 253px;
   }
+  
 }
 
 
@@ -515,7 +546,7 @@ pre {
   display: none;
 }
 
-.subText {
+.formCont {
   flex-direction: column;
 }
 
@@ -525,16 +556,16 @@ pre {
 
 .subBox {
     width: 100%;
-  }
+}
 
 .form {
     margin-left: 0;
     margin-top: 25px;
-  }
+}
 
-  .card-info {
+.card-info {
     flex-direction: column;
-  }
+}
   .card-btn {
     width: 106px;
     margin-top: 15px;
