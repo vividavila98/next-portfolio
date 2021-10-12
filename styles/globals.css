@@ -104,7 +104,7 @@ body {
 
 .headTitle {
   background: linear-gradient(to top, #133E7B 50%, transparent 50%);
-  display: inline;
+  display: inline-block;
 }
 
 .codeText {
@@ -117,11 +117,6 @@ body {
 
 .postTitle {
   background: linear-gradient(to top, #D2F7F2 50%, transparent 50%);
-  display: inline;
-}
-
-.headTitle {
-  background: linear-gradient(to top, #133E7B 50%, transparent 50%);
   display: inline;
 }
 
@@ -331,8 +326,13 @@ footer ul li a:hover {
   margin-top: 25px;
 }
 
+
 .projSec {
-  padding: 50px 0;
+  padding: 50px 0 15px 0;
+}
+
+.projSec .headTitle {
+  margin-bottom: 35px;
 }
 
 .projList {
@@ -346,7 +346,7 @@ footer ul li a:hover {
   display: inline-block;
   background: #1B3054;
   padding: 30px 15px;
-  margin: 35px 0;
+  margin-bottom: 70px;
   border-radius: 5px;
   z-index: 1;
   position: relative;
@@ -358,23 +358,13 @@ footer ul li a:hover {
   cursor: default;
 }
 
-.projBox:hover + .projOutline{
-  transform: translate(-10px, -20px);
+.projBox:hover + .projOutline, .projBox:hover + .projOutline2{
+  transform: translate(-10px, -24px);
   opacity: 0;
   transition: transform 500ms, opacity 1s;
   -moz-transition: transform 500ms, opacity 1s;
   -webkit-transition: transform 500ms, opacity 1s;
 }
-
-.projBox:hover + .projOutline2{
-  transform: translate(-10px, -20px);
-  transition: transform 500ms;
-  opacity: 0;
-  transition: transform 500ms, opacity 1s;
-  -moz-transition: transform 500ms, opacity 1s;
-  -webkit-transition: transform 500ms, opacity 1s;
-}
-
 
 .projOutline {
   border-radius: 5px;
@@ -383,7 +373,7 @@ footer ul li a:hover {
   height: 228px;
   position: absolute;
   z-index: 0;
-  bottom: 25px;
+  top: 14px;
   left: 10px;
   transition: transform 250ms;
   opacity: 1;
@@ -396,7 +386,7 @@ footer ul li a:hover {
   height: 228px;
   position: absolute;
   z-index: 0;
-  bottom: 25px;
+  top: 14px;
   right: -10px;
   transition: transform 250ms;
   opacity: 1;
@@ -501,6 +491,8 @@ pre {
   .picOutline {
     width: 277px;
     height: 277px;
+    top: 13px;
+    left: 12px;
   }
 
   .picBox {
@@ -512,7 +504,16 @@ pre {
     margin-top: 10px;
   }
 
-  .projOutline, .projOutline2 {
+  .projBox {
+    padding: 30px 10px;
+  }
+
+  .projOutline {
+    width: 313px;
+    height: 251px;
+  }
+
+  .projOutline2 {
     width: 322px;
     height: 253px;
   }
@@ -608,6 +609,10 @@ pre {
   .cardOutline {
     right: 0;
     left: 5px;
+  }
+
+  .projSec {
+    padding-bottom: 32.5px;
   }
 
   .projList {
