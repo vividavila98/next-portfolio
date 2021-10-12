@@ -483,6 +483,10 @@ pre {
   font-weight: 400;
 }
 
+.company:hover {
+  color: #F3E47D;
+}
+
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
@@ -622,6 +626,10 @@ pre {
   .projBox {
     width: 100%;
     margin-bottom: 17.5px;
+  }
+
+  .projBox:hover{
+    transform: none;
   }
 
   .projTech {

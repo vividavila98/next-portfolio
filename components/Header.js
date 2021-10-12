@@ -21,7 +21,7 @@ export default function Header() {
           </div>
           
           <div className="picBox animate__animated animate__fadeIn animate__delay-1s">
-            <Image src={realPic} className="topPic" width={500} height={500} alt="Picture of me" />
+            <Image src={realPic} className="topPic" width={500} height={500} alt="Picture of me" loading="eager"/>
             <div className="picOutline"></div>
           </div>
         </header>
