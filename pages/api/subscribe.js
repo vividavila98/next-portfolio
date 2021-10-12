@@ -25,7 +25,7 @@ function getRequestParams(email) {
   };
 }
 
-export default async (req, res) => {
+const checkEmail = async (req, res) => {
   const { email } = req.body;
 
   if (!email || !email.length) {
@@ -43,3 +43,5 @@ export default async (req, res) => {
     return res.status(400).json({error: "Something went wrong."});
   }
 };
+
+export default checkEmail;

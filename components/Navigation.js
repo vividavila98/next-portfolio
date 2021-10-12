@@ -29,8 +29,8 @@ export default function Navigation() {
         </nav>
         <nav className="container mobile">
           <div className="mobile-header">
-            <Link href="/"><span className="logo">V</span></Link>
-            <button className="ham" onClick={() => setDisplayNav(!displayNav)}><Image height={35} width={35} src={ham} /></button>
+            <Link href="/" passHref><span className="logo">V</span></Link>
+            <button className="ham" onClick={() => setDisplayNav(!displayNav)}><Image height={35} width={35} src={ham} alt="menu" /></button>
           </div>
           <ul className={displayNav ? "visible" : ""}>
             <li className={router.pathname == "/" ? "active" : ""}><Link href="/">home</Link></li>
