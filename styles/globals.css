@@ -180,6 +180,10 @@ body {
   display: block;
 }
 
+.postBtn:hover {
+  color: #F3E47D;
+}
+
 .code {
   color: #40CFE4;
   font-family: "Roboto Mono";
@@ -266,6 +270,7 @@ footer ul li a {
 
 footer ul li a:hover {
   text-decoration: underline;
+  color: #F3E47D;
 }
 
 .card {
@@ -285,7 +290,7 @@ footer ul li a:hover {
   position: relative;
 }
 
-.card .outline {
+.cardOutline {
   height: 32px;
   width: 106px;
   position: absolute;
@@ -294,6 +299,7 @@ footer ul li a:hover {
   z-index: 0;
   border-radius: 5px;
   border: 1px solid #D1F5F3;
+  transition: transform 3s;
 }
 
 .card-btn {
@@ -304,10 +310,19 @@ footer ul li a:hover {
   font-weight: 500;
   z-index: 1;
   padding: 4px 10px;
+  transition: transform 500ms;
+  -moz-transition: transform 500ms;
+  -webkit-transition: transform 500ms;
 }
 
 .card-btn:hover {
   background: #035d6f;
+  transform: translate(5px, 5px);
+}
+
+.card-btn:hover + .cardOutline {
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .card hr {
@@ -335,20 +350,31 @@ footer ul li a:hover {
   border-radius: 5px;
   z-index: 1;
   position: relative;
-  transition: transform 250ms;
+  transition: transform 500ms;
 }
 
 .projBox:hover{
   transform: translateY(-10px);
+  cursor: default;
 }
 
 .projBox:hover + .projOutline{
   transform: translate(-10px, -20px);
+  opacity: 0;
+  transition: transform 500ms, opacity 1s;
+  -moz-transition: transform 500ms, opacity 1s;
+  -webkit-transition: transform 500ms, opacity 1s;
 }
 
 .projBox:hover + .projOutline2{
   transform: translate(-10px, -20px);
+  transition: transform 500ms;
+  opacity: 0;
+  transition: transform 500ms, opacity 1s;
+  -moz-transition: transform 500ms, opacity 1s;
+  -webkit-transition: transform 500ms, opacity 1s;
 }
+
 
 .projOutline {
   border-radius: 5px;
@@ -360,6 +386,7 @@ footer ul li a:hover {
   bottom: 25px;
   left: 10px;
   transition: transform 250ms;
+  opacity: 1;
 }
 
 .projOutline2 {
@@ -372,6 +399,7 @@ footer ul li a:hover {
   bottom: 25px;
   right: -10px;
   transition: transform 250ms;
+  opacity: 1;
 }
 
 .projTech {
@@ -383,7 +411,7 @@ footer ul li a:hover {
 
 .projLink {
   margin: 0;
-  display: block;
+  display: inline-block;
 }
 
 .projLink:hover {
@@ -457,6 +485,12 @@ pre {
   display: inline-block;
   width: 47%;
   position: relative;
+}
+
+.company {
+  color: #40CFE4;
+  text-decoration: underline;
+  font-weight: 400;
 }
 
 @media (max-width: 992px) {
@@ -571,7 +605,7 @@ pre {
     margin-top: 15px;
   }
 
-  .card .outline {
+  .cardOutline {
     right: 0;
     left: 5px;
   }
@@ -629,4 +663,29 @@ pre {
   .projOutline, .projOutline2 {
     display: none;
   }
+}
+
+@keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@-moz-keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@-webkit-keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@-o-keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@-ms-keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
 }

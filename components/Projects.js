@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Projects() {
     return (
-    <section id="projects" className="projSec animate__animated animate__fadeIn animate__delay-1s">
+    <section id="projects" className="projSec animate__animated animate__fadeIn animate__delay-2s">
       <h2 className="headTitle">Featured Projects</h2>
       <div className="projList">
           <div className="projBox">

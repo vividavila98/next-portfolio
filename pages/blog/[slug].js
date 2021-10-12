@@ -8,6 +8,7 @@ export default function PostPage({frontmatter: {title, date}, slug, content}) {
         <div className="container">
             <article className="animate__animated animate__fadeIn animate__delay-2s" dangerouslySetInnerHTML={{__html: marked(content)}}>
             </article>
+            <p>The End</p>
         </div>
     )
 }

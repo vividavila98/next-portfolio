@@ -9,7 +9,7 @@ export default function Post({post}) {
             <Link href={`/blog/${post.slug}`}>
             <a className="card-btn">Read More</a>
             </Link>
-            <span className="outline"></span>
+            <span className="cardOutline"></span>
         </div>
         <hr />
       </div>
