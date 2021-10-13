@@ -12,9 +12,9 @@ export default function About() {
         </div>
         <p>
         Hello again! My name is Viviana, and I&#39;m currently looking for my next role as a 
-        Front-End Developer. With my education in UX/UI design, I started to teach myself how to code in 2018. 
+        Front-End Developer. To supplement my education in UX/UI design, I started to teach myself how to code in 2018. 
         Since then, I&#39;ve had the opportunity of working at a <a className="company" href="https://www.juristerra.net/" target="_blank" rel="noopener noreferrer">legal services startup</a>, a <a className="company" href="https://wistly.io/" target="_blank" rel="noopener noreferrer">delivery service app startup</a>, 
-        and a <a className="company" href="https://growthmed.com/" target="_blank" rel="noopener noreferrer">digital marketing agency</a>. In each role, I valued setting goals for myself, being feedback-oriented, and having a growth mindset. Feel free to email me to learn more about my experience!
+        and a <a className="company" href="https://growthmed.com/" target="_blank" rel="noopener noreferrer">digital marketing agency</a>. In each role, I valued setting goals for myself, being feedback-oriented, and having a growth mindset. If you'd like to learn more about my experience, feel free to email me!
         <br/>
         {/* If you’re interested in learning more about my experience, feel free to email me! */}
         </p>
