@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className="animate__animated animate__fadeIn animate__delay-2s">
           <div className="container">
             <ul>
               <li><Link href="mailto:vividavila98@gmail.com">Email</Link></li>

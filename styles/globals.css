@@ -616,7 +616,7 @@ pre {
   }
 
   .projSec {
-    padding-bottom: 32.5px;
+    padding-bottom: 15px;
   }
 
   .projList {
@@ -625,7 +625,7 @@ pre {
 
   .projBox {
     width: 100%;
-    margin-bottom: 17.5px;
+    margin-bottom: 35px;
   }
 
   .projBox:hover{
