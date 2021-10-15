@@ -341,6 +341,28 @@ footer ul li a:hover {
   position: relative;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.projBox:hover a {
+  color: #F3E47D;
+}
+
+.inner {
+  position: relative;
+  pointer-events: none;
+}
+
+.inner a {
+  margin-right: 10px;
+  pointer-events: all;
+}
+
 .projBox {
   width: 46%;
   display: inline-block;
@@ -402,21 +424,13 @@ footer ul li a:hover {
 .projLink {
   margin: 0;
   display: inline-block;
-}
-
-.projLink:hover {
-  color: #F3E47D;
-  cursor: pointer;
+  pointer-events: all;
 }
 
 .projInfo {
   font-weight: 200;
   font-size: .9em;
   margin-top: 5px;
-}
-
-.projBox a {
-  margin-right: 10px;
 }
 
 article {
@@ -513,12 +527,12 @@ pre {
   }
 
   .projOutline {
-    width: 313px;
-    height: 251px;
+    width: 312px;
+    height: 253px;
   }
 
   .projOutline2 {
-    width: 322px;
+    width: 312px;
     height: 253px;
   }
   
