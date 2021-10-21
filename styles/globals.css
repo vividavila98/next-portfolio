@@ -471,6 +471,17 @@ pre {
   border-radius: 10px;
 }
 
+.nextPost {
+  color: #40CFE4;
+  text-decoration: underline;
+  font-size: 1.25em;
+}
+
+.nextPost:hover {
+  cursor: pointer;
+  color: #F3E47D;
+}
+
 .aboutBox {
   display: flex;
   align-items: center;

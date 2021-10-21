@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Viviana Davila | Blog </title>
+        <title>Viviana Davila | Los Angeles, CA </title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/night-owl.min.css"></link>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
       </Head>
