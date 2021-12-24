@@ -34,15 +34,15 @@ export default function Projects() {
           <div className="projOutline"></div>
           
           <div className="projBox">
-            <a className="overlay" target="_blank" rel="noopener noreferrer" href="https://www.ravenous.me/"></a>
+            <a className="overlay" target="_blank" rel="noopener noreferrer" href="https://www.ravenous.life/"></a>
             <div className="inner">
               <p className="projTech">JavaScript React Yelp API</p>
-              <a className="projLink" href="https://www.ravenous.me/" target="_blank" rel="noopener noreferrer"><h3>Ravenous</h3></a>
+              <a className="projLink" href="https://www.ravenous.life/" target="_blank" rel="noopener noreferrer"><h3>Ravenous</h3></a>
               <p className="projInfo">
               An online directory to help you find the best local businesses based on their rating and reviews.
               </p>
               <div className="projLink">
-                <Link href="https://www.ravenous.me/">
+                <Link href="https://www.ravenous.life/">
                   <a target="_blank" rel="noopener noreferrer">
                     <Image src={exLink} className="arrow" width={25} height={25} alt="arrow" />
                   </a>
