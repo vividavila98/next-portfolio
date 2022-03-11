@@ -12,7 +12,7 @@ export default function Header() {
         <meta
           name="image"
           property="og:image"
-          content="./images/portfolio.png"
+          content="https://www.vivianadavila.dev/images/portfolio.png"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
