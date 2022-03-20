@@ -35,6 +35,7 @@ export default function Header() {
             height={500}
             alt="Picture of me"
             loading="eager"
+            priority={true}
           />
           <div className="picOutline"></div>
         </div>
